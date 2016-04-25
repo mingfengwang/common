@@ -1,7 +1,8 @@
 // n : the max length of the return arr.
-function shuffle(arr, n) {
+Array.prototype.shuffle = function (n) {
+    var params = [].slice.call(arguments);
     var index = -1,
-        result = arr,
+        result = this,
         length = result.length,
         lastIndex = length - 1;
 
